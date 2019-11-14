@@ -66,10 +66,11 @@ var drawArray = function(penguins, xScale, yScale)
     .append("g")
     .attr("fill", "none")
     .attr("stroke", "blue")
-    .attr("stroke-width", 1)
-    .on("mouseover", function(d){  d3.select("body").append("img").attr("src", "penguins/" + d.picture)
+    .attr("stroke-width", 2)
+    .on("mouseover", function(d){  d3.select(this).attr("stroke", "gold"); d3.select("body").append("img").attr("src", "penguins/" + d.picture)
     })
-    .on("mouseout", function(){ d3.select("body").selectAll("img").remove(); })
+    .on("mouseout", function(){ d3.select(this).attr("stroke", "blue");
+                               d3.select("body").selectAll("img").remove(); })
     
     
     var lineGenerator = d3.line()
