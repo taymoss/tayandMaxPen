@@ -1,5 +1,6 @@
 body{
-    path:hover;
+    path: hover;
     stroke: red;
+    background-color: aqua;
 }
 
