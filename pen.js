@@ -28,7 +28,7 @@ var makeGraph = function(penguins)
     var width = screen.width - margins.left - margins.right;
     var height = screen.height - margins.top - margins.bottom;
     
-    var xScale = d3.scaleLinear().domain([0, 23]).range([0, width]);
+    var xScale = d3.scaleLinear().domain([0, 38]).range([0, width]);
     var yScale = d3.scaleLinear().domain([0, 10]).range([height, 0]);
     
     var xAxis = d3.axisBottom(xScale);
