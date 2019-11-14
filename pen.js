@@ -14,7 +14,7 @@ function(err)
     }
 )
 var screen = {width: 500, height:600};
-var margins = {top:10, right:50, bottom:50, left:50};
+var margins = {top:20, right:75, bottom:75, left:75};
 
 var makeGraph = function(penguins)
 {
